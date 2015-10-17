@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="2" width="801" height="569" text="Browser&#xA;http://..." measuredWidth="801" measuredHeight="569">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="3" x="10" y="65" text="Jesteś zalogowany jako : XYZ" measuredWidth="170" measuredHeight="23">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Menu" id="4" x="12" y="104" width="158" text="&amp;Plan zajęć,&amp;Oceny,&amp;Uwagi" measuredWidth="158" measuredHeight="27">
+    <items x="5" y="0" width="63" height="27" text="&amp;Plan zajęć"/>
+    <items x="68" y="0" width="45" height="27" text="&amp;Oceny"/>
+    <items x="113" y="0" width="44" height="27" text="&amp;Uwagi"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

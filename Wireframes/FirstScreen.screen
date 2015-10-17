@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="8" width="801" height="569" text="Browser&#xA;http://..." measuredWidth="801" measuredHeight="569">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="9" x="304" y="62" text="LibrusLite" measuredWidth="185" measuredHeight="67">
+    <font size="43px"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="10" x="32" y="160" width="153" text="Login" measuredWidth="153" measuredHeight="29">
+    <font size="16px" italic="true"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="11" x="32" y="208" width="153" text="Hasło" measuredWidth="153" measuredHeight="29">
+    <font size="16px" italic="true"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="12" x="32" y="256" text="ZALOGUJ" measuredWidth="82" measuredHeight="30" style="round">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="14px"/>
+</model:Screen>
