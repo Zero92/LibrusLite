@@ -1,0 +1,130 @@
+
+
+
+
+
+
+
+
+
+
+LibrusLite
+
+
+
+
+
+
+
+Bartosz Pasek
+Krzysztof Wysiad³y
+Pawe³ Urban
+
+1. Charakterystyka programu
+	Program LibrusLite jest aplikacj¹ s³u¿¹c¹ do efektywnego zarz¹dzania procesami nauczania oraz ich efektami. 
+	Celem programu jest przedstawianie wymagañ stawianych przez nauczycieli, œledzenie ocen oraz rozwoju uczniów oraz u³atwienie komunikacji miêdzy nauczycielem a rodzicem.
+	Podstawowe cechy programu:
+Mo¿liwoœæ wystawiania ocen przez nauczyciela danego przedmiotu
+Automatyczne wyliczanie œredniej wa¿onej na podstawie wag zdefiniowanych przez nauczyciela
+Mo¿liwoœæ nagradzania b¹dŸ karania ucznia poprzez wpisanie uwagi
+Sprawdzanie zgromadzonych ocen przez ucznia jak i rodzica
+Sprawdzanie terminów zapowiedzianych prac klasowych oraz obowi¹zuj¹cy zakres materia³u
+Komunikacja rodzica z nauczycielem
+Tworzenie tygodniowych sprawozdañ z osi¹gniêæ ucznia oraz wysy³anie ich drog¹ elektroniczn¹ do rodzica
+
+2. Definicja u¿ytkownika koñcowego
+	U¿ytkownik koñcowy jest to osoba, która docelowo bêdzie korzystaæ z gotowego programu. Program LibrusLite docelowo bêdzie mia³ 5 u¿ytkowników koñcowych : 
+Uczeñ
+Rodzic
+Nauczyciel
+Sekretarka
+Dyrektor
+Ka¿da z powy¿szych osób bêdzie mia³a inne mo¿liwoœci administracyjne oraz inny poziom dostêpu do poszczególnych funkcji.
+Hierarchia u¿ytkowników prezentuje siê nastêpuj¹co (od u¿ytkownika posiadaj¹cego najwiêcej uprawnieñ) 
+Dyrektor ? Sekretarka ? Nauczyciel ? Rodzic ? Uczeñ
+
+Dostêpne kana³y komunikacyjne : 
+Uczeñ ? Nauczyciel
+Nauczyciel ? Uczeñ
+Rodzic ? Nauczyciela
+Nauczyciel ? Rodzic
+Rodzic ? Sekretarka
+Sekretarka ? Rodzic
+Sekretariat? Uczeñ
+Dyrektor ? Uczeñ
+Dyrektor ? Nauczyciel
+Nauczyciel ? Dyrektor 
+Dyrektor ? Rodzic
+Rodzic ? Dyrektor 
+Sekretariat ? Dyrektor 
+Dyrektor ? Sekretariat 
+
+3. Odbiór programu z perspektywy u¿ytkownika koñcowego
+1. Uczeñ
+Uczeñ jest podstawowym u¿ytkownikiem systemu LibrusLite. Wykorzystuje on system do sprawdzania uzyskanych ocen, materia³u na zapowiedziane prace klasowe oraz ewentualne uwagi nauczycieli. 
+	Aby uzyskaæ dostêp do systemu uczeñ loguje siê na przydzielone mu konto (za login s³u¿y numer identyfikacyjny PESEL). Po pierwszym zalogowaniu uczeñ musi wybraæ nowe has³o, mo¿e równie¿ po³¹czyæ swoje konto z adresem e-mail aby otrzymywaæ informacje o nowych wpisach utworzonych przez nauczycieli, sekretarkê b¹dŸ dyrektora.
+	Po wstêpnej konfiguracji konta uczeñ mo¿e wybraæ zak³adkê z panelu nawigacyjnego aby przenieœæ siê do odpowiedniego miejsca w systemie. Zak³adki dostêpne dla ucznia to : 
+Plan lekcji
+Przedmioty
+Uwagi
+
+Sekcja „Plan lekcji” zawiera aktualny plan zajêæ oraz og³oszenia o ewentualnych zastêpstwach. Informacja o danej lekcji zawiera godziny, salê oraz nauczyciela prowadz¹cego. Dodatkowo na czerwono wyró¿nione zostan¹ przedmioty, które maj¹ zadeklarowan¹ na dany dzieñ pracê klasow¹.
+Sekcja „Przedmioty” zawiera aktualny wykaz ocen z danego przedmiotu. Oceny maj¹ przypisan¹ odpowiedni¹ wagê (ustalana przez nauczyciela). Uczeñ widzi to w formie dymka który pojawia siê po najechaniu na odpowiedni¹ ocenê. Dodatkowo, aby u³atwiæ uczniom przewidywanie oceny koñcowej po prawej stronie wszystkich ocen z danego przedmiotu znajduje siê wyliczona aktualna œrednia wa¿ona z danego przedmiotu. Jeœli aktualna œrednia oscyluje wokó³ oceny 2 lub ni¿ej zostaje wtedy wyró¿niona kolorem czerwonym. Jeœli oscyluje wokó³ oceny 3 zostaje wtedy wyró¿niona kolorem pomarañczowym. Jeœli oscyluje wokó³ oceny 4 lub wy¿ej zostaje wyró¿niona kolorem zielonym. Kolory maj¹ pomóc uczniowi w orientacji z którym przedmiotem ma najwiêkszy problem. 
+
+Sekcja „Uwagi” zawiera uwagi, które zosta³y wystawione danemu uczniowi lub zbiorczo klasie jako ca³oœci. Uwagi dziel¹ siê na pozytywne oraz negatywne. 
+
+2. Rodzic
+Rodzic, podobnie jak uczeñ, dostaje predefiniowane konto, które jest po³¹czone z kontem ucznia (dziecka). Rodzic posiada dostêp do podobnych funkcji jak uczeñ, s¹ to : 
+Plan lekcji
+Sekcja „Plan lekcji” zawiera aktualny plan zajêæ oraz og³oszenia o ewentualnych zastêpstwach. Informacja o danej lekcji zawiera godziny, salê oraz nauczyciela prowadz¹cego. Dodatkowo na czerwono wyró¿nione zostan¹ przedmioty, które maj¹ zadeklarowan¹ na dany dzieñ pracê klasow¹.
+Przedmioty
+Sekcja „Przedmioty” zawiera aktualny wykaz ocen z danego przedmiotu. Oceny maj¹ przypisan¹ odpowiedni¹ wagê (ustalana przez nauczyciela). Rodzic widzi to w formie dymka który pojawia siê po najechaniu na odpowiedni¹ ocenê. Dodatkowo, aby u³atwiæ rodzicom przewidywanie oceny koñcowej po prawej stronie wszystkich ocen z danego przedmiotu znajduje siê wyliczona aktualna œrednia wa¿ona z danego przedmiotu. Jeœli aktualna œrednia oscyluje wokó³ oceny 2 lub ni¿ej zostaje wtedy wyró¿niona kolorem czerwonym. Jeœli oscyluje wokó³ oceny 3 zostaje wtedy wyró¿niona kolorem pomarañczowym. Jeœli oscyluje wokó³ oceny 4 lub wy¿ej zostaje wyró¿niona kolorem zielonym. Kolory maj¹ pomóc rodzicowi w orientacji z którym przedmiotem uczeñ ma najwiêkszy problem. 
+Uwagi
+Sekcja „Uwagi” zawiera uwagi, które zosta³y wystawione danemu uczniowi lub zbiorczo klasie jako ca³oœci. Uwagi dziel¹ siê na pozytywne oraz negatywne. 
+Kontakt
+Po wejœciu do sekcji „Kontakt” rodzic mo¿e wys³aæ oficjalnego maila do jednego z nauczycieli b¹dŸ maila do sekretariatu. W polu „Odbiorca” rodzic rozpoczyna wpisywanie imienia i/lub nazwiska nauczyciela, zostaje wyœwietlona podpowiedŸ, wraz z przedmiotem którego dany nauczyciel naucza, po zakoñczeniu wpisywania adresu rodzic mo¿e wybraæ temat, z listy zdefiniowanych tematów lub napisaæ w³asny, oraz wpisaæ treœæ wiadomoœci. Po naciœniêciu przycisku „wyœlij” zostaje wys³ana wiadomoœæ na podany adres.
+
+Dodatkowo rodzic ma mo¿liwoœæ po³¹czenia konta LibrusLite ze swoim kontem e-mail. Po po³¹czeniu kont rodzic dostaje na swój adres e-mail tygodniowe podsumowanie ocen dziecka oraz oficjalne wiadomoœci wysy³ane w systemie LibrusLite
+
+3. Nauczyciel
+Nauczyciel posiada predefiniowane konto. Po zalogowaniu siê do systemu nauczyciel widzi nastêpuj¹ce sekcje : 
+Plan zajêæ
+Rozpiska zajêæ nauczyciela. Po klikniêciu w odpowiedni¹ komórkê tabeli nauczyciel mo¿e wprowadzaæ zmiany takie jak : 
+Zaplanowanie pracy klasowej
+Wpisanie zakresu materia³u
+Wpisywanie ocen
+Wiadomoœci
+Sekcja zawiera wiadomoœci, które otrzyma³ nauczyciel. S¹ posegregowane na sekcje : 
+Korespondencja z rodzicami
+Korespondencja wewn¹trzszkolna
+
+Po otworzeniu korespondencji nauczyciel mo¿e odpowiedzieæ bezpoœrednio nadawcy.
+4. Sekretarka
+Sekretarka jest jedynym mo¿liwym medium ³¹cznoœci miêdzy rodzicami, uczniami a dyrektorem. Sekretarka loguje siê na predefiniowane konto. Posiada ona najwy¿sze uprawnienia, pozwala to na nadpisywanie danych wpisanych przez innych u¿ytkowników. 
+Po zalogowaniu sekretarka widzi nastêpuj¹ce sekcje : 
+Plan zajêæ
+Globalny plan zajêæ ca³ej szko³y. Otwiera siê w formie tabelki, pozwala przejœæ do menu dowolnej klasy
+Klasy
+Uczniowie s¹ posortowani jak w dzienniku lekcyjnym. Po klikniêciu w odpowiedniego ucznia mo¿na wejœæ w rozpiskê jego ocen, uwag oraz wszelkie dane osobowe. Posiada opcjê edycji dowolnej wpisanej oceny, wagi lub uwagi
+Nauczyciel
+Rozpiska nauczycieli wraz z przedmiotami oraz przypisanymi klasami. Pozwala wys³aæ wiadomoœæ bezpoœrednio do nauczyciela.
+Wiadomoœci
+Wszelkie wiadomoœci otrzymane przez sekretariat. Dziel¹ siê na korespondencjê z rodzicami, korespondencjê wewn¹trzszkoln¹ oraz korespondencjê pozaszkoln¹. 
+5. Dyrektor
+Dyrektor posiada uprawnienia to¿same z sekretark¹. W systemie zostaje utworzone predefiniowane konto. Po zalogowaniu siê na konto dyrektor widzi nastêpuj¹ce sekcje 
+Plan zajêæ
+Plan przedstawia rozpiskê wszystkich zajêæ we wszystkich klasach. Po klikniêciu w odpowiedni¹ klasê system przenosi nas do strony danej klasy. Po klikniêciu w nauczyciela system przenosi nas do planu zajêæ danego nauczyciela. 
+Klasy
+W sekcji klas mo¿na sprawdziæ wszystkie oceny uczniów oraz wystawione uwagi. Po najechaniu kursorem na ocenê na wyskakuj¹cym dymku pojawia siê jej waga oraz za co zosta³a wystawiona. Dyrektor ma mo¿liwoœæ wys³ania wiadomoœci do ucznia lub rodzica. Po klikniêciu w nazwisko ucznia wyskakuje ma³e menu w którym dyrektor mo¿e wybraæ do kogo chce wys³aæ wiadomoœæ. 
+Nauczyciele 
+W sekcji nauczycieli mo¿na sprawdziæ plan zajêæ ka¿dego z nauczycieli oraz skontaktowaæ siê bezpoœrednio z nimi. Po wejœciu do danej sekcji do wyboru jest lista nauczycieli posegregowana alfabetycznie oraz podzielona na poszczególne przedmioty. Po klikniêciu w nauczyciela przenosi nas to do sekcji z planem zajêæ danego nauczyciela. Obok nazwiska nauczyciela widnieje ikona pozwalaj¹ca na skontaktowanie siê z nim. Po klikniêciu w ikonkê otwarta zostaje sekcja pisania wiadomoœci. W tej sekcji dyrektor mo¿e wys³aæ wiadomoœæ do nauczyciela
+Wiadomoœci
+Wszelkie wiadomoœci otrzymane przez dyrektora. Dziel¹ siê na korespondencjê z rodzicami, korespondencjê wewn¹trzszkoln¹ oraz korespondencjê pozaszkoln¹. 
+
+
+
+
+
+
+	
+
